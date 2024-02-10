@@ -1,13 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-    <div>Hello World</div>
-</body>
-</html>
+<header>
+
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<footer class="bg-gray-900 h-14 fixed bottom-0 w-screen flex justify-center items-center">
+    <a routerLink="/today" routerLinkActive class="h-full inline-flex flex-col items-center justify-center px-20 cursor-pointer hover:bg-gray-800 duration-200">
+        <i class="fa-solid fa-cube text-gray-300 footer-icon mb-1"></i>
+        <span class="text-white text-xs">Astăzi</span>
+    </a>
+    <a routerLink="/plan" routerLinkActive class="h-full inline-flex flex-col items-center justify-center px-20 cursor-pointer hover:bg-gray-800 duration-200">
+        <i class="fa-regular fa-calendar-days text-gray-300 footer-icon mb-1"></i>
+        <span class="text-white text-xs">Plan</span>
+    </a>
+    <a routerLink="/settings" routerLinkActive class="h-full inline-flex flex-col items-center justify-center px-20 cursor-pointer hover:bg-gray-800 duration-200">
+        <i class="fa-solid fa-gears text-gray-300 footer-icon mb-1"></i>
+        <span class="text-white text-xs">Setări</span>
+    </a>
+</footer>
